@@ -1,0 +1,1152 @@
+/* 堀DAY music 2026 - Coming Soon Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #333;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.logo-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2em;
+    padding: 0 20px;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    margin-bottom: 1em;
+}
+
+.day-logo {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.event-dates {
+    display: inline-block;
+    background: #1a7a5e;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 50px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 12px rgba(26, 122, 94, 0.3);
+}
+
+.coming-soon {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 50px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.venue {
+    font-size: clamp(1rem, 2.8vw, 1.3rem);
+    font-weight: 700;
+    color: #1a7a5e;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+.location {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-weight: 500;
+    color: #1a7a5e;
+    line-height: 1.8;
+}
+
+/* News Section */
+.news-section {
+    padding: 60px 20px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+}
+
+.news-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.news-list {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    border: 3px solid #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.news-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(26, 122, 94, 0.3);
+    background: rgba(255, 255, 255, 1);
+}
+
+.news-date {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    background: #1a7a5e;
+    padding: 6px 14px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+}
+
+.news-title {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.02em;
+}
+
+.news-item:hover .news-title {
+    color: #1a7a5e;
+}
+
+/* Gospel Recruitment Section */
+.gospel-recruitment {
+    padding: 60px 20px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+}
+
+.gospel-recruitment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+/* Gospel Image */
+.gospel-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.gospel-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    width: 100%;
+    transform: rotate(1.5deg);
+}
+
+.gospel-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.gospel-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gospel-image:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+}
+
+.gospel-image:hover::before {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gospel-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Booth Recruitment Section */
+.booth-recruitment {
+    padding: 60px 20px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+}
+
+.booth-recruitment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.booth-announcement {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.booth-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.booth-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    width: 100%;
+    transform: rotate(-1.5deg);
+}
+
+.booth-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.booth-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.booth-image:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+}
+
+.booth-image:hover::before {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.booth-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Dance Contest Section */
+.dance-contest {
+    padding: 60px 20px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+}
+
+.dance-contest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.contest-announcement {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.announcement-main {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.announcement-sub {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.contest-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.contest-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    width: 100%;
+    transform: rotate(-1.5deg);
+}
+
+.contest-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.contest-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.contest-image:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+}
+
+.contest-image:hover::before {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.contest-image:hover img {
+    transform: scale(1.05);
+}
+
+.contest-content {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contest-info-text {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contest-info-text h3 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333;
+}
+
+.contest-info-text h3:first-child {
+    margin-top: 0;
+}
+
+.contest-info-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.contest-info-text li {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+}
+
+.contest-info-text li::before {
+    content: '▸';
+    color: #333;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.contest-info-text p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.deadline-highlight {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1em;
+    background: #333;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin: 40px auto 30px;
+    padding-bottom: 15px;
+    max-width: 1000px;
+    border-bottom: 3px solid #1a7a5e;
+}
+
+/* Judges Section */
+.judges-section {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.judge-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.judge-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+}
+
+.judge-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.judge-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.4s ease;
+}
+
+.judge-card:hover .judge-image img {
+    transform: scale(1.08);
+}
+
+.judge-info {
+    padding: 20px;
+}
+
+.judge-info h4 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #1a7a5e;
+    padding-bottom: 8px;
+}
+
+.judge-catchcopy {
+    color: #1a7a5e !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    font-style: italic;
+    margin-bottom: 8px !important;
+}
+
+.judge-title {
+    color: #555 !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+
+.judge-info p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.judge-link {
+    margin-top: 12px;
+}
+
+.judge-link a {
+    color: #1a7a5e;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.judge-link a:hover {
+    color: #FF6B35;
+    text-decoration: underline;
+}
+
+.application-button {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-apply {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    padding: 18px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #FF6B35;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+}
+
+.btn-apply:hover {
+    background: #fff;
+    color: #FF6B35;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.3);
+}
+
+/* Last Year Section */
+.last-year {
+    padding: 60px 20px;
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+}
+
+.last-year::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Photo Title with Marker */
+.photo-title {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.photo-title span {
+    background: linear-gradient(transparent 60%, #FFD700 60%);
+    padding: 8px 16px 8px 0;
+    color: #333;
+    display: inline-block;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.title-subtitle {
+    background: none !important;
+    display: block !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    margin-top: 10px !important;
+    padding: 0 !important;
+    letter-spacing: 0.1em !important;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 3 / 2;
+    background: #fff;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ランダムに傾ける */
+.gallery-item:nth-child(3n+1) {
+    transform: rotate(-2deg);
+}
+
+.gallery-item:nth-child(3n+2) {
+    transform: rotate(1.5deg);
+}
+
+.gallery-item:nth-child(3n+3) {
+    transform: rotate(-1deg);
+}
+
+.gallery-item:nth-child(5n+1) {
+    transform: rotate(2deg);
+}
+
+.gallery-item:nth-child(7n+2) {
+    transform: rotate(-1.5deg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px) rotate(0deg) !important;
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+    z-index: 10;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+    background: url('../images/background.png') center center / cover no-repeat fixed;
+    position: relative;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 122, 94, 0.85), rgba(26, 122, 94, 0.95));
+    z-index: 0;
+}
+
+footer p {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.copyright {
+    position: relative;
+    z-index: 1;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 500px;
+    }
+
+    .logo-wrapper {
+        max-width: 90%;
+        margin-bottom: 1.5em;
+    }
+
+    .event-dates {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .coming-soon {
+        padding: 8px 24px;
+        font-size: 0.85rem;
+    }
+
+    .location {
+        font-size: 0.9rem;
+    }
+
+    .news-section {
+        padding: 40px 15px;
+    }
+
+    .news-item {
+        padding: 16px 20px;
+        gap: 15px;
+    }
+
+    .news-date {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
+
+    .news-title {
+        font-size: 1rem;
+    }
+
+    .gospel-recruitment {
+        padding: 40px 15px;
+    }
+
+    .gospel-image {
+        max-width: 500px;
+        transform: rotate(1deg);
+    }
+
+    .booth-recruitment {
+        padding: 40px 15px;
+    }
+
+    .booth-image {
+        max-width: 500px;
+        transform: rotate(-1deg);
+    }
+
+    .dance-contest {
+        padding: 40px 15px;
+    }
+
+    .contest-image {
+        max-width: 500px;
+        transform: rotate(-1deg);
+    }
+
+    .announcement-main {
+        font-size: 1.5rem;
+    }
+
+    .announcement-sub {
+        font-size: 1.1rem;
+    }
+
+    .contest-info-text {
+        padding: 25px 20px;
+    }
+
+    .contest-info-text h3 {
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    .contest-info-text li {
+        font-size: 0.9rem;
+    }
+
+    .contest-info-text p {
+        font-size: 0.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem;
+        margin: 30px auto 25px;
+        padding-bottom: 12px;
+    }
+
+    .judges-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .judge-info {
+        padding: 18px;
+    }
+
+    .judge-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .judge-info p {
+        font-size: 0.85rem;
+    }
+
+    .judge-link a {
+        font-size: 0.85rem;
+    }
+
+    .btn-apply {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+    }
+
+    .last-year {
+        padding: 40px 15px;
+    }
+
+    .photo-title {
+        font-size: 1rem;
+        margin-bottom: 45px;
+    }
+
+    .photo-title span {
+        padding: 6px 12px 6px 0;
+        font-size: 1.3rem;
+    }
+
+    .title-subtitle {
+        font-size: 0.95rem !important;
+        margin-top: 8px !important;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 15px 0;
+    }
+
+    .gallery-item {
+        border-radius: 10px;
+        border: 2px solid #fff;
+    }
+}
+
+@media (max-width: 480px) {
+    /* スマホでは背景画像全体が見えるように */
+    .hero,
+    .news-section,
+    .gospel-recruitment,
+    .booth-recruitment,
+    .dance-contest,
+    .last-year,
+    footer {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: repeat-y;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .logo-wrapper {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+
+    .event-dates {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    .coming-soon {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+    }
+
+    .location {
+        font-size: 0.85rem;
+    }
+
+    .news-section {
+        padding: 30px 10px;
+    }
+
+    .news-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 16px;
+        gap: 10px;
+    }
+
+    .news-date {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+
+    .news-title {
+        font-size: 0.95rem;
+    }
+
+    .gospel-recruitment {
+        padding: 30px 10px;
+    }
+
+    .gospel-image-wrapper {
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .gospel-image {
+        max-width: 100%;
+        border-radius: 10px;
+        transform: rotate(0.8deg);
+    }
+
+    .booth-recruitment {
+        padding: 30px 10px;
+    }
+
+    .booth-image-wrapper {
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .booth-image {
+        max-width: 100%;
+        border-radius: 10px;
+        transform: rotate(-0.8deg);
+    }
+
+    .dance-contest {
+        padding: 30px 10px;
+    }
+
+    .contest-image-wrapper {
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .contest-image {
+        max-width: 100%;
+        border-radius: 10px;
+        transform: rotate(-0.8deg);
+    }
+
+    .announcement-main {
+        font-size: 1.3rem;
+    }
+
+    .announcement-sub {
+        font-size: 1rem;
+    }
+
+    .contest-info-text {
+        padding: 20px 15px;
+    }
+
+    .contest-info-text h3 {
+        font-size: 1rem;
+        margin-top: 18px;
+    }
+
+    .contest-info-text li {
+        font-size: 0.85rem;
+        padding: 6px 0;
+        padding-left: 18px;
+    }
+
+    .contest-info-text p {
+        font-size: 0.85rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+        margin: 25px auto 20px;
+        padding-bottom: 10px;
+    }
+
+    .judges-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .judge-info {
+        padding: 15px;
+    }
+
+    .judge-info h4 {
+        font-size: 1rem;
+    }
+
+    .judge-info p {
+        font-size: 0.8rem;
+    }
+
+    .judge-link a {
+        font-size: 0.8rem;
+    }
+
+    .btn-apply {
+        padding: 14px 35px;
+        font-size: 1rem;
+    }
+
+    .last-year {
+        padding: 30px 10px;
+    }
+
+    .photo-title {
+        font-size: 0.9rem;
+        margin-bottom: 36px;
+    }
+
+    .photo-title span {
+        padding: 5px 10px 5px 0;
+        font-size: 1.15rem;
+    }
+
+    .title-subtitle {
+        font-size: 0.85rem !important;
+        margin-top: 6px !important;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .gallery-item {
+        border-radius: 8px;
+        border: 2px solid #fff;
+    }
+
+    /* スマホでは傾きを控えめに */
+    .gallery-item:nth-child(3n+1) {
+        transform: rotate(-1deg);
+    }
+
+    .gallery-item:nth-child(3n+2) {
+        transform: rotate(0.8deg);
+    }
+
+    .gallery-item:nth-child(3n+3) {
+        transform: rotate(-0.5deg);
+    }
+
+    .gallery-item:nth-child(5n+1) {
+        transform: rotate(1deg);
+    }
+
+    .gallery-item:nth-child(7n+2) {
+        transform: rotate(-0.8deg);
+    }
+}
