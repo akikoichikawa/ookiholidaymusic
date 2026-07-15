@@ -31,7 +31,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .hero-content {
@@ -122,7 +122,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -214,7 +214,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -240,17 +240,6 @@ body {
     transform: rotate(1.5deg);
 }
 
-.gospel-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-    transition: background 0.3s ease;
-}
 
 .gospel-image img {
     width: 100%;
@@ -264,9 +253,6 @@ body {
     box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
 }
 
-.gospel-image:hover::before {
-    background: rgba(255, 255, 255, 0.15);
-}
 
 .gospel-image:hover img {
     transform: scale(1.05);
@@ -286,7 +272,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -318,17 +304,6 @@ body {
     transform: rotate(-1.5deg);
 }
 
-.booth-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-    transition: background 0.3s ease;
-}
 
 .booth-image img {
     width: 100%;
@@ -342,9 +317,6 @@ body {
     box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
 }
 
-.booth-image:hover::before {
-    background: rgba(255, 255, 255, 0.15);
-}
 
 .booth-image:hover img {
     transform: scale(1.05);
@@ -364,7 +336,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -411,17 +383,6 @@ body {
     transform: rotate(-1.5deg);
 }
 
-.contest-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-    transition: background 0.3s ease;
-}
 
 .contest-image img {
     width: 100%;
@@ -435,9 +396,6 @@ body {
     box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
 }
 
-.contest-image:hover::before {
-    background: rgba(255, 255, 255, 0.15);
-}
 
 .contest-image:hover img {
     transform: scale(1.05);
@@ -668,7 +626,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
