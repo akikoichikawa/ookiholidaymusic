@@ -126,6 +126,30 @@ body {
     z-index: 0;
 }
 
+/* Poster Image */
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.poster-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster-image:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(26, 122, 94, 0.3);
+}
+
 .news-list {
     position: relative;
     z-index: 1;
@@ -821,6 +845,14 @@ footer p {
         font-size: 1rem;
     }
 
+    .poster-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .poster-image {
+        max-width: 500px;
+    }
+
     .gospel-recruitment {
         padding: 40px 15px;
     }
@@ -992,6 +1024,16 @@ footer p {
 
     .news-title {
         font-size: 0.95rem;
+    }
+
+    .poster-wrapper {
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .poster-image {
+        max-width: 100%;
+        border-radius: 10px;
     }
 
     .gospel-recruitment {
