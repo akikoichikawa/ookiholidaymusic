@@ -987,12 +987,32 @@ footer p {
         display: none;
     }
 
-    .hero-info {
-        display: none;
+    .hero-area {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 25px;
     }
 
-    .hero-area {
-        margin-bottom: 25px;
+    .hero-info {
+        order: -1;
+        padding: 60px 20px 50px;
+    }
+
+    .hero-info .logo-wrapper {
+        max-width: 250px;
+    }
+
+    .hero-info .event-dates {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .hero-info .venue {
+        font-size: 1rem;
+    }
+
+    .hero-info .location {
+        font-size: 0.9rem;
     }
 
     .news-item {
