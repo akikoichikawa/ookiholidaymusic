@@ -122,17 +122,72 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 248, 230, 1) 0%, rgba(255, 248, 230, 1) 10%, rgba(255, 248, 230, 0) 100%);
     z-index: 0;
+}
+
+/* Hero Area */
+.hero-area {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-info {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.hero-info .logo-wrapper {
+    max-width: 300px;
+    margin: 0 auto 1.5em;
+}
+
+.hero-info .main-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-info .event-dates {
+    display: inline-block;
+    background: #1a7a5e;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 50px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(26, 122, 94, 0.3);
+}
+
+.hero-info .venue {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a7a5e;
+    margin-bottom: 0.5em;
+}
+
+.hero-info .location {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a7a5e;
+    line-height: 1.8;
 }
 
 /* Poster Image */
 .poster-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
     position: relative;
     z-index: 1;
+    flex-shrink: 0;
 }
 
 .poster-image {
@@ -928,6 +983,18 @@ footer p {
         padding: 0 10px 30px 10px;
     }
 
+    .news-section::before {
+        display: none;
+    }
+
+    .hero-info {
+        display: none;
+    }
+
+    .hero-area {
+        margin-bottom: 25px;
+    }
+
     .news-item {
         flex-direction: column;
         align-items: flex-start;
@@ -946,13 +1013,13 @@ footer p {
 
     .poster-wrapper {
         margin-bottom: 25px;
-        padding: 0 1%;
+        padding: 0;
     }
 
     .poster-image {
-        max-width: 98%;
-        width: 98%;
-        border-radius: 10px;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
     }
 
     .gospel-recruitment {
